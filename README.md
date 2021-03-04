@@ -1,11 +1,13 @@
-# Lab # 4 - IETI
-# 1.4 Task Planner Project - Front End - Part 2
+# Lab # 6 - IETI
+# 2.1 Task Planner API
 
 
 ### Pre-requisitos 📋
 
-* NodeJS
+* Java 8
 * Git
+* Docker
+* Gradle
 
 
 
@@ -14,7 +16,7 @@
 1. Clonar el repositorio
 
 ```
-git clone https://github.com/sebastianfrasic/IETI-Lab4.git
+git clone https://github.com/sebastianfrasic/IETI-Lab6.git
 ```
 
 
@@ -31,17 +33,9 @@ npm start
 
 
 
-3. Para el login las credenciales son las siguientes:
-
-**Username:** Sebastian
-**Password:** 1234
-
-
-
-
 ## Construido con 🛠️
 
-* React
+* SpringBoot
 
 
 ## Autor ✒️
