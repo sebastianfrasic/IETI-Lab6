@@ -60,6 +60,7 @@ public class User {
     }
 
     public void addTask(Task task) {
+        System.out.println(task);
         this.tasks.add(task);
     }
 

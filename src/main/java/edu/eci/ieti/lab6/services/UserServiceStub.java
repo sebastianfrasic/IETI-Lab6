@@ -40,11 +40,12 @@ public class UserServiceStub implements UserService {
 
     @Override
     public User create(User user) throws ServiceException {
-        if (users.contains(user.getId())) {
-            throw new ServiceException("User already registered");
-        } else {
-            users.add(user);
+        for (User u : users) {
+            if (u.getId().equals(user.getId())) {
+                throw new ServiceException("User already registered");
+            }
         }
+        users.add(user);
         return user;
     }
 
@@ -59,13 +60,8 @@ public class UserServiceStub implements UserService {
     }
 
     @Override
-    public void remove(String userId) throws ServiceException {
-        for (int i = 0; i < users.size(); i++) {
-            if (users.get(i).getId().equals(userId)) {
-                users.remove(i);
-            }
-        }
-        throw new ServiceException("That user doesn´t exists");
+    public void remove(String userId) {
+        users.removeIf(i -> i.getId().equals(userId));
     }
 
     @Override

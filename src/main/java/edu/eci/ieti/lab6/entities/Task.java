@@ -17,6 +17,12 @@ public class Task {
         this.dueDate = dueDate;
     }
 
+    public Task(String description, Responsible responsible, String status) {
+        this.description = description;
+        this.responsible = responsible;
+        this.status = status;
+    }
+
     public String getDescription() {
         return description;
     }

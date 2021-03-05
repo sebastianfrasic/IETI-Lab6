@@ -17,7 +17,7 @@ public interface UserService {
 
     User update(String id, User user);
 
-    void remove(String userId) throws ServiceException;
+    void remove(String userId);
 
     void addTask(String userId, Task task) throws ServiceException;
 
