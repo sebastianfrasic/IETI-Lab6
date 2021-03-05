@@ -23,14 +23,10 @@ git clone https://github.com/sebastianfrasic/IETI-Lab6.git
 2. Para ejecutar la aplicación
 
 ```
-npm install
+gradle bootrun
 ```
 
-
-```
-npm start
-```
-
+3. La parte 3 (del consumo del API) se realizó en uno de los repositorios donde está el Front. En el siguiente enlace: https://github.com/sebastianfrasic/IETI-Lab4
 
 
 ## Construido con 🛠️
