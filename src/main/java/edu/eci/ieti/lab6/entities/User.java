@@ -17,6 +17,7 @@ public class User {
         this.name = name;
         this.email = email;
         this.password = password;
+        tasks = new ArrayList<>();
     }
 
     public User(String name, String email) {
@@ -25,6 +26,7 @@ public class User {
     }
 
     public User() {
+        tasks = new ArrayList<>();
     }
 
     public String getId() {
@@ -60,7 +62,6 @@ public class User {
     }
 
     public void addTask(Task task) {
-        System.out.println(task);
         this.tasks.add(task);
     }
 

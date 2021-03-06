@@ -23,6 +23,9 @@ public class Task {
         this.status = status;
     }
 
+    public Task() {
+    }
+
     public String getDescription() {
         return description;
     }

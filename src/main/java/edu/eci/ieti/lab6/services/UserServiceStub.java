@@ -66,11 +66,17 @@ public class UserServiceStub implements UserService {
 
     @Override
     public void addTask(String userId, Task task) throws ServiceException {
+        boolean userExisting = false;
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getId().equals(userId)) {
                 users.get(i).addTask(task);
+                userExisting = true;
+                break;
             }
         }
-        throw new ServiceException("That user doesn´t exists");
+        if(!userExisting){
+            throw new ServiceException("That user doesn´t exists");
+        }
+
     }
 }
