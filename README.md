@@ -2,6 +2,8 @@
 # 2.1 Task Planner API
 
 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](http://lab6-ieti-frasica.southcentralus.azurecontainer.io:8080/users)
+
 ### Pre-requisitos 📋
 
 * Java 8
@@ -20,18 +22,29 @@ git clone https://github.com/sebastianfrasic/IETI-Lab6.git
 ```
 
 
-2. Para ejecutar la aplicación
+2. Para ejecutar la aplicación del back
 
 ```
 gradle bootrun
 ```
 
-3. La parte 3 (del consumo del API) se realizó en uno de los repositorios donde está el Front. En el siguiente enlace: https://github.com/sebastianfrasic/IETI-Lab4
+3. Para la parte 3, dirigirse al directorio "front-end", allí ejecutar:
+
+```
+npm install
+```
+
+```
+npm start
+```
+
 
 
 ## Construido con 🛠️
 
 * SpringBoot
+* ReactJS
+* Docker
 
 
 ## Autor ✒️
